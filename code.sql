@@ -28,12 +28,12 @@ create table if not exists album_singer (
 	album_id  integer references album(id)
 );
 create table if not exists collection (
-   id serial primary key,
-   name varchar(100) not null unique,
-   year_of_release integer not null
+        id serial primary key,
+        name varchar(100) not null unique,
+        year_of_release integer not null
 );
 create table if not exists track_collection (
 	id serial primary key,
-  collection_id  integer references collection(id),
+        collection_id  integer references collection(id),
 	track_id  integer references track(id)
 );
