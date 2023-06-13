@@ -15,20 +15,20 @@ INSERT INTO genre_executor(genre_id, executor_id)
 
 INSERT INTO album(album_name, year_of_release) 
 	VALUES('Origins',2018), ('Unbreakable',2004),
-		('Баста 40',2020), ('Music To Be Murdered By - Side B',2020),
-		('Back in Black',1980), ('Living Things',2012),
-		('Man of the Woods',2018), ('Indigo',2019);
+		('Encore',2004), ('O.M.G.',2021),
+		('Fallen',2003), ('Life Starts Now',2009),
+		('Metamorphosis',2009), ('Porgy and Bess',1957);
 
 INSERT INTO executor_album(executor_id, album_id) 
 	values(1,1), (2,2), (3,3), (4,4),
 		(5,5), (6,6), (7,7), (8,8);
 
 INSERT INTO track(track_name, duration, album_id) 
-	values('Watch What Happens', 141, 1), ('My Way', 277, 1),
-		('What a Wonderful World', 140, 2), ('Hello Brother', 212, 2),
-		('+100500', 348, 3), ('Любовь и страх', 320, 3),
-		('Killer', 195, 4), ('No Regrets', 201, 4),
-		('Back in Black', 256, 5), ('Rock and Rol Ain"t Noise Pollution', 256, 5),
+	values('Natural', 189, 1), ('Bad Liar', 260, 1),
+		('Deep and Dark', 219, 2), ('Blood Too Hot', 256, 2),
+		('Like Toy Soldiers', 297, 3), ('Just Lose It', 249, 3),
+		('Take Me To The Party', 187, 4), ('Want Some More', 201, 4),
+		('Back in Black', 256, 5), ('Rock and Rol Ain"t Noise Pollution', 183, 5),
 		('Burn it Down', 230, 6), ('Powerless', 225, 6),
 		('Supplies', 226, 7), ('Say Something', 279, 7),
 		('No Guidance', 261, 8), ('Dear God', 243, 8);
