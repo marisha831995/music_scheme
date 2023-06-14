@@ -13,17 +13,17 @@ INSERT INTO genre_singer(genre_id, singer_id)
 		(2,7), (3,4),
 		(4,8), (5,3);
 
-INSERT INTO album(album_name, year_of_release) 
+INSERT INTO album(title, year_of_release) 
 	VALUES('Origins',2018), ('Unbreakable',2004),
 		('Encore',2004), ('O.M.G.',2021),
 		('Fallen',2003), ('Life Starts Now',2009),
 		('Metamorphosis',2009), ('Porgy and Bess',1957);
 
-INSERT INTO singer_album(singer_id, album_id) 
+INSERT INTO album_singer(singer_id, album_id) 
 	values(1,1), (2,2), (3,3), (4,4),
 		(5,5), (6,6), (7,7), (8,8);
 
-INSERT INTO track(track_name, duration, album_id) 
+INSERT INTO track(title, duration, album_id) 
 	values('Natural', 189, 1), ('Bad Liar', 260, 1),
 		('Deep and Dark', 219, 2), ('Blood Too Hot', 256, 2),
 		('Like Toy Soldiers', 297, 3), ('Just Lose It', 249, 3),
@@ -33,12 +33,12 @@ INSERT INTO track(track_name, duration, album_id)
 		('Carry Me', 266, 7), ('Live This Down', 216, 7),
 		('My Man's Gone Now', 240, 8), ('Summertime', 183, 8);
 
-INSERT INTO collection_of_songs(collection_name, year_of_release) 
+INSERT INTO collection(name, year_of_release) 
 	values('Сборник 1', 2015), ('Сборник 2', 2020),
 		('Сборник 3', 2017), ('Сборник 4', 2005),
 		('Сборник 5', 2012), ('Сборник 6', 2022),
 		('Сборник 7', 1934), ('Сборник 8', 2019);
 
-INSERT INTO track_collection(track_id, collection_of_songs_id) 
+INSERT INTO track_collection(track_id, collection_id) 
 	values(1,2), (2,2), (3,4), (4,4), (5,3), (6,3), (7,6), (8,6), 
 		(9,5), (10,5), (11,1), (12,1), (13,8), (14,8), (15,7), (16,7);
