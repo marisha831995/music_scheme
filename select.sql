@@ -1,18 +1,18 @@
-SELECT album_name, year_of_release FROM album    
+SELECT title, year_of_release FROM album    
 	WHERE year_of_release = 2018;
 
-SELECT track_name, duration FROM track    
+SELECT title, duration FROM track    
 	ORDER BY duration DESC
 	LIMIT 1;
 	
-SELECT track_name FROM track 
+SELECT title FROM track 
 	WHERE duration >= 210;
 	
-SELECT collection_name FROM collection_of_songs 
+SELECT name FROM collection 
 	WHERE year_of_release BETWEEN 2018 and 2020;
 	
 SELECT singer_name FROM singer
 	WHERE singer_name NOT LIKE '%% %%';
 	
-SELECT track_name FROM track
+SELECT title FROM track
 	WHERE track_name LIKE '%%My%%';
