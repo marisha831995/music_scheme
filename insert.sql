@@ -1,13 +1,13 @@
 INSERT INTO genre(genre_name) 
 	VALUES('Pop'), ('Rock'), ('Pop-Rock'), ('Jazz'), ('Rap');
 
-INSERT INTO executor(executor_name) 
+INSERT INTO singer(singer_name) 
 	VALUES('Imagine Dragons'),('Scorpions'),
 		('Eminem'),('City Wolf'),('Evanescence'),
 		('Three Days Grace'),('Papa Roach'),
 		('Louis Armstrong');
 
-INSERT INTO genre_executor(genre_id, executor_id) 
+INSERT INTO genre_singer(genre_id, singer_id) 
 	VALUES(1,1), (2,2),
 		(2,5), (2,6),
 		(2,7), (3,4),
@@ -19,7 +19,7 @@ INSERT INTO album(album_name, year_of_release)
 		('Fallen',2003), ('Life Starts Now',2009),
 		('Metamorphosis',2009), ('Porgy and Bess',1957);
 
-INSERT INTO executor_album(executor_id, album_id) 
+INSERT INTO singer_album(singer_id, album_id) 
 	values(1,1), (2,2), (3,3), (4,4),
 		(5,5), (6,6), (7,7), (8,8);
 
