@@ -1,9 +1,8 @@
 SELECT title, year_of_release FROM album    
 	WHERE year_of_release = 2018;
 
-SELECT title, duration FROM track    
-	ORDER BY duration DESC
-	LIMIT 1;
+SELECT title, duration FROM track
+        WHERE duration=(SELECT MAX(duration) FROM track);
 	
 SELECT title FROM track 
 	WHERE duration >= 210;
@@ -15,4 +14,4 @@ SELECT singer_name FROM singer
 	WHERE singer_name NOT LIKE '%% %%';
 	
 SELECT title FROM track
-	WHERE track_name LIKE '%%My%%';
+	WHERE title LIKE '%%My%%';
