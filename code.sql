@@ -7,10 +7,10 @@ create table if not exists singer (
 	singer_name varchar(100) not null
 );
 create table if not exists genre_singer (
-	id serial primary key,
-	constraint pk_genre_singer primary key (genre_id, singer_id),
+	primary key (genre_id, singer_id),
 	genre_id  integer references genre(id),
-	singer_id  integer references singer(id)
+	singer_id  integer references singer(id),
+	constraint pk_genre_singer
 );
 create table if not exists album (
 	id serial primary key,
@@ -24,10 +24,10 @@ create table if not exists track (
 	album_id integer references album(id)
 );
 create table if not exists album_singer (
-	id serial primary key,
-        constraint pk_album_singer primary key (album_id, singer_id),
+        primary key (album_id, singer_id),
 	singer_id  integer references singer(id),
-	album_id  integer references album(id)
+	album_id  integer references album(id),
+	constraint pk_album_singer
 );
 create table if not exists collection (
         id serial primary key,
@@ -35,8 +35,8 @@ create table if not exists collection (
         year_of_release integer not null
 );
 create table if not exists track_collection (
-	id serial primary key,
-	constraint pk_track_collection primary key (track_id, collection_id),
+	primary key (track_id, collection_id),
         collection_id  integer references collection(id),
-	track_id  integer references track(id)
+	track_id  integer references track(id),
+	constraint pk_track_collection
 );
