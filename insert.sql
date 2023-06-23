@@ -31,7 +31,7 @@ INSERT INTO track(title, duration, album_id)
 		('Bring Me To Life', 237, 5), ('Going Under', 214, 5),
 		('Break', 236, 6), ('The Good Life', 253, 6),
 		('Carry Me', 266, 7), ('Live This Down', 216, 7),
-		('My Man's Gone Now', 240, 8), ('Summertime', 183, 8);
+		('It Take a Long Pull to Get There', 240, 8), ('Summertime', 183, 8);
 
 INSERT INTO collection(name, year_of_release) 
 	values('Сборник 1', 2015), ('Сборник 2', 2020),
